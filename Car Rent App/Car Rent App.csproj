@@ -12,7 +12,7 @@
   <ItemGroup>
     <Folder Include="Entities\" />
     <Folder Include="Data\" />
-    <Folder Include="NewFolder\" />
+    <Folder Include="Pictures\" />
   </ItemGroup>
 
   <ItemGroup>
