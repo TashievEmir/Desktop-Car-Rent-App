@@ -26,7 +26,9 @@ namespace Car_Rent_App.Views
 
         private void btnAddCar_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            FormAddCar formAddCar = new FormAddCar();
+            formAddCar.Show();
         }
     }
 }

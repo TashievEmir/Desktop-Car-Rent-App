@@ -40,3 +40,4 @@ E:\Staj2\CarRent\Car Rent App\bin\Debug\net6.0-windows\System.Text.Json.dll
 E:\Staj2\CarRent\Car Rent App\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
 E:\Staj2\CarRent\Car Rent App\obj\Debug\net6.0-windows\Car Rent App.csproj.CopyComplete
 E:\Staj2\CarRent\Car Rent App\obj\Debug\net6.0-windows\Car_Rent_App.Views.FormMain.resources
+E:\Staj2\CarRent\Car Rent App\obj\Debug\net6.0-windows\Car_Rent_App.Views.FormAddCar.resources
