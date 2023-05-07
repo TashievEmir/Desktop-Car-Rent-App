@@ -1,3 +1,4 @@
+using Car_Rent_App.Views;
 namespace Car_Rent_App
 {
     internal static class Program
@@ -11,7 +12,7 @@ namespace Car_Rent_App
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new FormAuth());
+            Application.Run( new FormAuthentificate() );
         }
     }
 }
