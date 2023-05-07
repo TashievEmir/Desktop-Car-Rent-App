@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿
+using Microsoft.EntityFrameworkCore;
+using ApplicationContext = Car_Rent_App.Entities.ApplicationContext;
 
 namespace Car_Rent_App.Views
 {
@@ -29,11 +23,29 @@ namespace Car_Rent_App.Views
 
         }
 
-        private void btnSignIn_Click(object sender, EventArgs e)
+        private async void btnSignIn_Click(object sender, EventArgs e)
         {
             string email=tbemail.Text;
             string password = tbpassword.Text;
 
+            using (ApplicationContext db = new ApplicationContext())
+            {
+                var user = await db.Users.FirstOrDefaultAsync(x => x.Email==email);
+                if (user == null)
+                {
+                    MessageBox.Show("There is no user with such email");
+                }
+                else if(password != user.Password)
+                {
+                    MessageBox.Show("Incorrect password");
+                }
+                else
+                {
+                    this.Hide();
+                    FormMain formMain = new FormMain();
+                    formMain.Show();
+                }
+            }
         }
     }
 }

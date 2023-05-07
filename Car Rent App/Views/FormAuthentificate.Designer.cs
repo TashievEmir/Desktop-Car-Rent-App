@@ -133,7 +133,7 @@
             // 
             this.tbpassword.Location = new System.Drawing.Point(252, 295);
             this.tbpassword.Name = "tbpassword";
-            this.tbpassword.Size = new System.Drawing.Size(131, 24);
+            this.tbpassword.Size = new System.Drawing.Size(159, 24);
             this.tbpassword.TabIndex = 1;
             this.tbpassword.UseSystemPasswordChar = true;
             // 
@@ -141,7 +141,7 @@
             // 
             this.tbemail.Location = new System.Drawing.Point(252, 197);
             this.tbemail.Name = "tbemail";
-            this.tbemail.Size = new System.Drawing.Size(131, 24);
+            this.tbemail.Size = new System.Drawing.Size(159, 24);
             this.tbemail.TabIndex = 0;
             this.tbemail.TextChanged += new System.EventHandler(this.tbemail_TextChanged);
             // 
