@@ -41,5 +41,12 @@ namespace Car_Rent_App.Views
             }
             this.Refresh();
         }
+
+        private void btnAllCars_Click(object sender, EventArgs e)
+        {
+            FormAllCars formAllCars = new FormAllCars();
+            formAllCars.Show();
+            this.Hide();
+        }
     }
 }

@@ -98,7 +98,7 @@
             this.panelFooter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(45)))), ((int)(((byte)(112)))));
             this.panelFooter.Controls.Add(this.lbChatGpt);
             this.panelFooter.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelFooter.Location = new System.Drawing.Point(0, 508);
+            this.panelFooter.Location = new System.Drawing.Point(0, 504);
             this.panelFooter.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.panelFooter.Name = "panelFooter";
             this.panelFooter.Size = new System.Drawing.Size(834, 77);
@@ -126,7 +126,7 @@
             this.panelSideMenu.Location = new System.Drawing.Point(0, 70);
             this.panelSideMenu.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.panelSideMenu.Name = "panelSideMenu";
-            this.panelSideMenu.Size = new System.Drawing.Size(190, 438);
+            this.panelSideMenu.Size = new System.Drawing.Size(190, 434);
             this.panelSideMenu.TabIndex = 3;
             // 
             // pictureBox1
@@ -181,6 +181,7 @@
             this.btnAllCars.TabIndex = 0;
             this.btnAllCars.Text = "All Cars";
             this.btnAllCars.UseVisualStyleBackColor = false;
+            this.btnAllCars.Click += new System.EventHandler(this.btnAllCars_Click);
             // 
             // tb_brand
             // 
@@ -323,7 +324,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(834, 585);
+            this.ClientSize = new System.Drawing.Size(834, 581);
             this.Controls.Add(this.tbPrice);
             this.Controls.Add(this.lbPrice);
             this.Controls.Add(this.dateTimePicker);
