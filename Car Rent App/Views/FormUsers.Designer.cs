@@ -1,6 +1,6 @@
 ﻿namespace Car_Rent_App.Views
 {
-    partial class FormAllCars
+    partial class FormUsers
     {
         /// <summary>
         /// Required designer variable.
@@ -28,36 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAllCars));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormUsers));
             this.panelHeader = new System.Windows.Forms.Panel();
             this.btnLogOut = new System.Windows.Forms.Button();
-            this.lb_AddCar = new System.Windows.Forms.Label();
+            this.lb_users = new System.Windows.Forms.Label();
             this.panelFooter = new System.Windows.Forms.Panel();
             this.lbChatGpt = new System.Windows.Forms.Label();
             this.panelSideMenu = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnUsers = new System.Windows.Forms.Button();
-            this.btn_searchCar = new System.Windows.Forms.Button();
+            this.btnSearchCar = new System.Windows.Forms.Button();
+            this.btn_AllCar = new System.Windows.Forms.Button();
             this.btnAddCars = new System.Windows.Forms.Button();
-            this.dataGV_allCars = new System.Windows.Forms.DataGridView();
             this.panelHeader.SuspendLayout();
             this.panelFooter.SuspendLayout();
             this.panelSideMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGV_allCars)).BeginInit();
             this.SuspendLayout();
             // 
             // panelHeader
             // 
             this.panelHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(45)))), ((int)(((byte)(112)))));
             this.panelHeader.Controls.Add(this.btnLogOut);
-            this.panelHeader.Controls.Add(this.lb_AddCar);
+            this.panelHeader.Controls.Add(this.lb_users);
             this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelHeader.Location = new System.Drawing.Point(0, 0);
             this.panelHeader.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
             this.panelHeader.Name = "panelHeader";
-            this.panelHeader.Size = new System.Drawing.Size(854, 84);
-            this.panelHeader.TabIndex = 2;
+            this.panelHeader.Size = new System.Drawing.Size(834, 84);
+            this.panelHeader.TabIndex = 4;
             // 
             // btnLogOut
             // 
@@ -70,27 +68,27 @@
             this.btnLogOut.Text = "Log Out";
             this.btnLogOut.UseVisualStyleBackColor = true;
             // 
-            // lb_AddCar
+            // lb_users
             // 
-            this.lb_AddCar.AutoSize = true;
-            this.lb_AddCar.Font = new System.Drawing.Font("Comic Sans MS", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.lb_AddCar.ForeColor = System.Drawing.Color.White;
-            this.lb_AddCar.Location = new System.Drawing.Point(339, 16);
-            this.lb_AddCar.Name = "lb_AddCar";
-            this.lb_AddCar.Size = new System.Drawing.Size(198, 34);
-            this.lb_AddCar.TabIndex = 0;
-            this.lb_AddCar.Text = "Page of all cars";
+            this.lb_users.AutoSize = true;
+            this.lb_users.Font = new System.Drawing.Font("Comic Sans MS", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.lb_users.ForeColor = System.Drawing.Color.White;
+            this.lb_users.Location = new System.Drawing.Point(339, 16);
+            this.lb_users.Name = "lb_users";
+            this.lb_users.Size = new System.Drawing.Size(173, 34);
+            this.lb_users.TabIndex = 0;
+            this.lb_users.Text = "Page of users";
             // 
             // panelFooter
             // 
             this.panelFooter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(45)))), ((int)(((byte)(112)))));
             this.panelFooter.Controls.Add(this.lbChatGpt);
             this.panelFooter.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelFooter.Location = new System.Drawing.Point(0, 519);
+            this.panelFooter.Location = new System.Drawing.Point(0, 653);
             this.panelFooter.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
             this.panelFooter.Name = "panelFooter";
-            this.panelFooter.Size = new System.Drawing.Size(854, 92);
-            this.panelFooter.TabIndex = 3;
+            this.panelFooter.Size = new System.Drawing.Size(834, 80);
+            this.panelFooter.TabIndex = 5;
             // 
             // lbChatGpt
             // 
@@ -107,15 +105,15 @@
             // 
             this.panelSideMenu.BackColor = System.Drawing.Color.White;
             this.panelSideMenu.Controls.Add(this.pictureBox1);
-            this.panelSideMenu.Controls.Add(this.btnUsers);
-            this.panelSideMenu.Controls.Add(this.btn_searchCar);
+            this.panelSideMenu.Controls.Add(this.btnSearchCar);
+            this.panelSideMenu.Controls.Add(this.btn_AllCar);
             this.panelSideMenu.Controls.Add(this.btnAddCars);
             this.panelSideMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelSideMenu.Location = new System.Drawing.Point(0, 84);
             this.panelSideMenu.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
             this.panelSideMenu.Name = "panelSideMenu";
-            this.panelSideMenu.Size = new System.Drawing.Size(190, 435);
-            this.panelSideMenu.TabIndex = 4;
+            this.panelSideMenu.Size = new System.Drawing.Size(190, 569);
+            this.panelSideMenu.TabIndex = 6;
             // 
             // pictureBox1
             // 
@@ -128,33 +126,33 @@
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
-            // btnUsers
+            // btnSearchCar
             // 
-            this.btnUsers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(53)))), ((int)(((byte)(101)))));
-            this.btnUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUsers.Font = new System.Drawing.Font("Comic Sans MS", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.btnUsers.ForeColor = System.Drawing.Color.White;
-            this.btnUsers.Location = new System.Drawing.Point(12, 329);
-            this.btnUsers.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.btnUsers.Name = "btnUsers";
-            this.btnUsers.Size = new System.Drawing.Size(165, 54);
-            this.btnUsers.TabIndex = 3;
-            this.btnUsers.Text = "Users";
-            this.btnUsers.UseVisualStyleBackColor = false;
+            this.btnSearchCar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(53)))), ((int)(((byte)(101)))));
+            this.btnSearchCar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearchCar.Font = new System.Drawing.Font("Comic Sans MS", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.btnSearchCar.ForeColor = System.Drawing.Color.White;
+            this.btnSearchCar.Location = new System.Drawing.Point(12, 329);
+            this.btnSearchCar.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.btnSearchCar.Name = "btnSearchCar";
+            this.btnSearchCar.Size = new System.Drawing.Size(165, 54);
+            this.btnSearchCar.TabIndex = 3;
+            this.btnSearchCar.Text = "Search Car";
+            this.btnSearchCar.UseVisualStyleBackColor = false;
             // 
-            // btn_searchCar
+            // btn_AllCar
             // 
-            this.btn_searchCar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(53)))), ((int)(((byte)(101)))));
-            this.btn_searchCar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_searchCar.Font = new System.Drawing.Font("Comic Sans MS", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.btn_searchCar.ForeColor = System.Drawing.Color.White;
-            this.btn_searchCar.Location = new System.Drawing.Point(12, 244);
-            this.btn_searchCar.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.btn_searchCar.Name = "btn_searchCar";
-            this.btn_searchCar.Size = new System.Drawing.Size(165, 54);
-            this.btn_searchCar.TabIndex = 1;
-            this.btn_searchCar.Text = "Search Car";
-            this.btn_searchCar.UseVisualStyleBackColor = false;
+            this.btn_AllCar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(53)))), ((int)(((byte)(101)))));
+            this.btn_AllCar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_AllCar.Font = new System.Drawing.Font("Comic Sans MS", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.btn_AllCar.ForeColor = System.Drawing.Color.White;
+            this.btn_AllCar.Location = new System.Drawing.Point(12, 244);
+            this.btn_AllCar.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.btn_AllCar.Name = "btn_AllCar";
+            this.btn_AllCar.Size = new System.Drawing.Size(165, 54);
+            this.btn_AllCar.TabIndex = 1;
+            this.btn_AllCar.Text = "All Car";
+            this.btn_AllCar.UseVisualStyleBackColor = false;
             // 
             // btnAddCars
             // 
@@ -169,42 +167,27 @@
             this.btnAddCars.TabIndex = 0;
             this.btnAddCars.Text = "Add Car";
             this.btnAddCars.UseVisualStyleBackColor = false;
-            this.btnAddCars.Click += new System.EventHandler(this.btnAddCars_Click);
             // 
-            // dataGV_allCars
-            // 
-            this.dataGV_allCars.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGV_allCars.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGV_allCars.Location = new System.Drawing.Point(190, 84);
-            this.dataGV_allCars.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.dataGV_allCars.Name = "dataGV_allCars";
-            this.dataGV_allCars.RowTemplate.Height = 25;
-            this.dataGV_allCars.Size = new System.Drawing.Size(664, 435);
-            this.dataGV_allCars.TabIndex = 5;
-            // 
-            // FormAllCars
+            // FormUsers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
-            this.ClientSize = new System.Drawing.Size(854, 611);
-            this.Controls.Add(this.dataGV_allCars);
+            this.ClientSize = new System.Drawing.Size(834, 733);
             this.Controls.Add(this.panelSideMenu);
             this.Controls.Add(this.panelFooter);
             this.Controls.Add(this.panelHeader);
             this.Font = new System.Drawing.Font("Comic Sans MS", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "FormAllCars";
+            this.Name = "FormUsers";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormAllCars";
+            this.Text = "FormUsers";
             this.panelHeader.ResumeLayout(false);
             this.panelHeader.PerformLayout();
             this.panelFooter.ResumeLayout(false);
             this.panelFooter.PerformLayout();
             this.panelSideMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGV_allCars)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -213,14 +196,13 @@
 
         private Panel panelHeader;
         private Button btnLogOut;
-        private Label lb_AddCar;
+        private Label lb_users;
         private Panel panelFooter;
         private Label lbChatGpt;
         private Panel panelSideMenu;
         private PictureBox pictureBox1;
-        private Button btnUsers;
-        private Button btn_searchCar;
+        private Button btnSearchCar;
+        private Button btn_AllCar;
         private Button btnAddCars;
-        private DataGridView dataGV_allCars;
     }
 }

@@ -212,15 +212,16 @@
             // 
             // cbIsAvailable
             // 
+            this.cbIsAvailable.Enabled = false;
             this.cbIsAvailable.Font = new System.Drawing.Font("Comic Sans MS", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.cbIsAvailable.FormattingEnabled = true;
             this.cbIsAvailable.Items.AddRange(new object[] {
-            "true",
-            "false"});
+            "true"});
             this.cbIsAvailable.Location = new System.Drawing.Point(610, 273);
             this.cbIsAvailable.Name = "cbIsAvailable";
             this.cbIsAvailable.Size = new System.Drawing.Size(135, 31);
             this.cbIsAvailable.TabIndex = 11;
+            this.cbIsAvailable.Text = "true";
             // 
             // lbBrand
             // 
