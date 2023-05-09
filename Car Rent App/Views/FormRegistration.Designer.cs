@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormRegistration));
             this.panelRegistr = new System.Windows.Forms.Panel();
+            this.cbrole = new System.Windows.Forms.ComboBox();
+            this.lbrole = new System.Windows.Forms.Label();
             this.tb_passwRepeat = new System.Windows.Forms.TextBox();
             this.tb_passw = new System.Windows.Forms.TextBox();
             this.tb_emailRegistr = new System.Windows.Forms.TextBox();
@@ -44,8 +46,6 @@
             this.lb_surname = new System.Windows.Forms.Label();
             this.lb_name = new System.Windows.Forms.Label();
             this.lb_registr = new System.Windows.Forms.Label();
-            this.lbrole = new System.Windows.Forms.Label();
-            this.cbrole = new System.Windows.Forms.ComboBox();
             this.panelRegistr.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,6 +72,30 @@
             this.panelRegistr.Name = "panelRegistr";
             this.panelRegistr.Size = new System.Drawing.Size(500, 500);
             this.panelRegistr.TabIndex = 0;
+            // 
+            // cbrole
+            // 
+            this.cbrole.Enabled = false;
+            this.cbrole.FormattingEnabled = true;
+            this.cbrole.Items.AddRange(new object[] {
+            "user"});
+            this.cbrole.Location = new System.Drawing.Point(150, 163);
+            this.cbrole.Name = "cbrole";
+            this.cbrole.Size = new System.Drawing.Size(150, 31);
+            this.cbrole.TabIndex = 15;
+            this.cbrole.Text = "user";
+            this.cbrole.SelectedIndexChanged += new System.EventHandler(this.cbrole_SelectedIndexChanged);
+            // 
+            // lbrole
+            // 
+            this.lbrole.AutoSize = true;
+            this.lbrole.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.lbrole.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(53)))), ((int)(((byte)(101)))));
+            this.lbrole.Location = new System.Drawing.Point(80, 161);
+            this.lbrole.Name = "lbrole";
+            this.lbrole.Size = new System.Drawing.Size(64, 29);
+            this.lbrole.TabIndex = 14;
+            this.lbrole.Text = "Role:";
             // 
             // tb_passwRepeat
             // 
@@ -205,27 +229,6 @@
             this.lb_registr.Size = new System.Drawing.Size(174, 38);
             this.lb_registr.TabIndex = 0;
             this.lb_registr.Text = "Registration";
-            // 
-            // lbrole
-            // 
-            this.lbrole.AutoSize = true;
-            this.lbrole.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.lbrole.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(53)))), ((int)(((byte)(101)))));
-            this.lbrole.Location = new System.Drawing.Point(80, 161);
-            this.lbrole.Name = "lbrole";
-            this.lbrole.Size = new System.Drawing.Size(64, 29);
-            this.lbrole.TabIndex = 14;
-            this.lbrole.Text = "Role:";
-            // 
-            // cbrole
-            // 
-            this.cbrole.FormattingEnabled = true;
-            this.cbrole.Items.AddRange(new object[] {
-            "user"});
-            this.cbrole.Location = new System.Drawing.Point(150, 163);
-            this.cbrole.Name = "cbrole";
-            this.cbrole.Size = new System.Drawing.Size(150, 31);
-            this.cbrole.TabIndex = 15;
             // 
             // FormRegistration
             // 

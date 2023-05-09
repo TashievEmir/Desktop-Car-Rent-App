@@ -62,7 +62,7 @@
             this.panelHeader.Location = new System.Drawing.Point(0, 0);
             this.panelHeader.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
             this.panelHeader.Name = "panelHeader";
-            this.panelHeader.Size = new System.Drawing.Size(884, 84);
+            this.panelHeader.Size = new System.Drawing.Size(934, 84);
             this.panelHeader.TabIndex = 3;
             // 
             // btnLogOut
@@ -75,6 +75,7 @@
             this.btnLogOut.TabIndex = 1;
             this.btnLogOut.Text = "Log Out";
             this.btnLogOut.UseVisualStyleBackColor = true;
+            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
             // lb_SearchCar
             // 
@@ -95,7 +96,7 @@
             this.panelFooter.Location = new System.Drawing.Point(0, 519);
             this.panelFooter.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
             this.panelFooter.Name = "panelFooter";
-            this.panelFooter.Size = new System.Drawing.Size(884, 92);
+            this.panelFooter.Size = new System.Drawing.Size(934, 92);
             this.panelFooter.TabIndex = 4;
             // 
             // lbChatGpt
@@ -185,7 +186,7 @@
             this.dataGVSearchCar.Location = new System.Drawing.Point(196, 206);
             this.dataGVSearchCar.Name = "dataGVSearchCar";
             this.dataGVSearchCar.RowTemplate.Height = 25;
-            this.dataGVSearchCar.Size = new System.Drawing.Size(676, 304);
+            this.dataGVSearchCar.Size = new System.Drawing.Size(726, 304);
             this.dataGVSearchCar.TabIndex = 6;
             // 
             // tbBrand
@@ -258,7 +259,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(884, 611);
+            this.ClientSize = new System.Drawing.Size(934, 611);
             this.Controls.Add(this.btnBook);
             this.Controls.Add(this.btnserach);
             this.Controls.Add(this.tbmodel);

@@ -56,7 +56,7 @@
             this.panelHeader.Location = new System.Drawing.Point(0, 0);
             this.panelHeader.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
             this.panelHeader.Name = "panelHeader";
-            this.panelHeader.Size = new System.Drawing.Size(854, 84);
+            this.panelHeader.Size = new System.Drawing.Size(934, 84);
             this.panelHeader.TabIndex = 2;
             // 
             // btnLogOut
@@ -69,6 +69,7 @@
             this.btnLogOut.TabIndex = 1;
             this.btnLogOut.Text = "Log Out";
             this.btnLogOut.UseVisualStyleBackColor = true;
+            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
             // lb_AddCar
             // 
@@ -89,7 +90,7 @@
             this.panelFooter.Location = new System.Drawing.Point(0, 519);
             this.panelFooter.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
             this.panelFooter.Name = "panelFooter";
-            this.panelFooter.Size = new System.Drawing.Size(854, 92);
+            this.panelFooter.Size = new System.Drawing.Size(934, 92);
             this.panelFooter.TabIndex = 3;
             // 
             // lbChatGpt
@@ -181,7 +182,7 @@
             this.dataGV_allCars.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataGV_allCars.Name = "dataGV_allCars";
             this.dataGV_allCars.RowTemplate.Height = 25;
-            this.dataGV_allCars.Size = new System.Drawing.Size(664, 435);
+            this.dataGV_allCars.Size = new System.Drawing.Size(744, 435);
             this.dataGV_allCars.TabIndex = 5;
             // 
             // FormAllCars
@@ -189,7 +190,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
-            this.ClientSize = new System.Drawing.Size(854, 611);
+            this.ClientSize = new System.Drawing.Size(934, 611);
             this.Controls.Add(this.dataGV_allCars);
             this.Controls.Add(this.panelSideMenu);
             this.Controls.Add(this.panelFooter);

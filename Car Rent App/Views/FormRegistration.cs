@@ -1,14 +1,6 @@
 ﻿using Car_Rent_App.Entities;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using ApplicationContext = Car_Rent_App.Entities.ApplicationContext;
+
 namespace Car_Rent_App.Views
 {
     public partial class FormRegistration : Form
@@ -58,6 +50,11 @@ namespace Car_Rent_App.Views
                     formAuthentificate.Show();
                 }
             }
+        }
+
+        private void cbrole_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

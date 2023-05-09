@@ -134,7 +134,7 @@
             this.tbpassword.Font = new System.Drawing.Font("Comic Sans MS", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.tbpassword.Location = new System.Drawing.Point(252, 295);
             this.tbpassword.Name = "tbpassword";
-            this.tbpassword.Size = new System.Drawing.Size(197, 30);
+            this.tbpassword.Size = new System.Drawing.Size(221, 30);
             this.tbpassword.TabIndex = 1;
             this.tbpassword.UseSystemPasswordChar = true;
             // 
@@ -143,7 +143,7 @@
             this.tbemail.Font = new System.Drawing.Font("Comic Sans MS", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.tbemail.Location = new System.Drawing.Point(252, 197);
             this.tbemail.Name = "tbemail";
-            this.tbemail.Size = new System.Drawing.Size(197, 30);
+            this.tbemail.Size = new System.Drawing.Size(221, 30);
             this.tbemail.TabIndex = 0;
             this.tbemail.TextChanged += new System.EventHandler(this.tbemail_TextChanged);
             // 

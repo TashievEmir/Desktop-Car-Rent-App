@@ -58,8 +58,23 @@ namespace Car_Rent_App.Views
 
         private void btnUsers_Click(object sender, EventArgs e)
         {
-            FormUsers formUsers = new FormUsers();
-            formUsers.Show();
+            if (SharedData._authorization["role"] == "admin")
+            {
+                FormUsers formUsers = new FormUsers();
+                formUsers.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("You don't have a permission");
+            }
+        }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            SharedData._authorization.Remove("role");
+            FormAuthentificate formAuthentificate = new FormAuthentificate();
+            formAuthentificate.Show();
             this.Hide();
         }
     }

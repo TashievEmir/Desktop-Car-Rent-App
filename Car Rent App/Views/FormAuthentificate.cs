@@ -1,5 +1,6 @@
 ﻿
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Diagnostics;
 using ApplicationContext = Car_Rent_App.Entities.ApplicationContext;
 
 namespace Car_Rent_App.Views
@@ -12,10 +13,10 @@ namespace Car_Rent_App.Views
         }
 
         private void btnSignup_Click(object sender, EventArgs e)
-        {
-            this.Hide();
+        { 
             FormRegistration formRegistration = new FormRegistration();
             formRegistration.ShowDialog();
+            this.Hide();
         }
 
         private void tbemail_TextChanged(object sender, EventArgs e)
@@ -41,9 +42,11 @@ namespace Car_Rent_App.Views
                 }
                 else
                 {
-                    this.Hide();
+                    SharedData._authorization.Add("role", $"{user.Role}");
+
                     FormMain formMain = new FormMain();
                     formMain.Show();
+                    this.Hide();
                 }
             }
         }

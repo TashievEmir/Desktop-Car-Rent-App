@@ -22,9 +22,16 @@ namespace Car_Rent_App.Views
 
         private void btnAddCars_Click(object sender, EventArgs e)
         {
-            FormAddCar formAddCar = new FormAddCar();
-            formAddCar.Show();
-            this.Hide();
+            if (SharedData._authorization["role"] == "admin")
+            {
+                FormAddCar formAddCar = new FormAddCar();
+                formAddCar.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("You don't have a permission");
+            }
         }
 
         private void btn_AllCar_Click(object sender, EventArgs e)
@@ -36,9 +43,16 @@ namespace Car_Rent_App.Views
 
         private void btnUsers_Click(object sender, EventArgs e)
         {
-            FormUsers formUsers = new FormUsers();
-            formUsers.Show();
-            this.Hide();
+            if (SharedData._authorization["role"] == "admin")
+            {
+                FormUsers formUsers = new FormUsers();
+                formUsers.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("You don't have a permission");
+            }
         }
 
         private async void btnserach_Click(object sender, EventArgs e)
@@ -55,7 +69,15 @@ namespace Car_Rent_App.Views
                 using (ApplicationContext db = new ApplicationContext())
                 {
                     var cars = await db.Cars.Where(z => z.Model == model && z.isAvailable == true).ToListAsync();
-                    dataGVSearchCar.DataSource = cars;
+
+                    if (cars == null)
+                    {
+                        MessageBox.Show("there is no such car");
+                    }
+                    else
+                    {
+                        dataGVSearchCar.DataSource = cars;
+                    }
                 }
             }
             else if (brand!="" && model=="")
@@ -63,7 +85,15 @@ namespace Car_Rent_App.Views
                 using (ApplicationContext db = new ApplicationContext())
                 {
                     var cars = await db.Cars.Where(z => z.Brand == brand && z.isAvailable == true).ToListAsync();
-                    dataGVSearchCar.DataSource = cars;
+
+                    if (cars == null)
+                    {
+                        MessageBox.Show("there is no such car");
+                    }
+                    else
+                    {
+                        dataGVSearchCar.DataSource = cars;
+                    }
                 }
             }
             else
@@ -71,7 +101,15 @@ namespace Car_Rent_App.Views
                 using (ApplicationContext db = new ApplicationContext())
                 {
                     var cars = await db.Cars.Where(z =>z.Brand==brand && z.Model == model && z.isAvailable == true).ToListAsync();
-                    dataGVSearchCar.DataSource = cars;
+
+                    if (cars == null)
+                    {
+                        MessageBox.Show("there is no such car");
+                    }
+                    else
+                    {
+                        dataGVSearchCar.DataSource = cars;
+                    }
                 }
             }
         }
@@ -104,6 +142,14 @@ namespace Car_Rent_App.Views
                 MessageBox.Show("you didn't choose the row");
             }
             
+        }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            SharedData._authorization.Remove("role");
+            FormAuthentificate formAuthentificate = new FormAuthentificate();
+            formAuthentificate.Show();
+            this.Hide();
         }
     }
 }

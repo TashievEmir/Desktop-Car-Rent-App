@@ -39,10 +39,14 @@
             this.btnSearchCar = new System.Windows.Forms.Button();
             this.btn_AllCar = new System.Windows.Forms.Button();
             this.btnAddCars = new System.Windows.Forms.Button();
+            this.dataGV_users = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.panelHeader.SuspendLayout();
             this.panelFooter.SuspendLayout();
             this.panelSideMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGV_users)).BeginInit();
             this.SuspendLayout();
             // 
             // panelHeader
@@ -54,7 +58,7 @@
             this.panelHeader.Location = new System.Drawing.Point(0, 0);
             this.panelHeader.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
             this.panelHeader.Name = "panelHeader";
-            this.panelHeader.Size = new System.Drawing.Size(834, 84);
+            this.panelHeader.Size = new System.Drawing.Size(934, 84);
             this.panelHeader.TabIndex = 4;
             // 
             // btnLogOut
@@ -67,6 +71,7 @@
             this.btnLogOut.TabIndex = 1;
             this.btnLogOut.Text = "Log Out";
             this.btnLogOut.UseVisualStyleBackColor = true;
+            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
             // lb_users
             // 
@@ -87,7 +92,7 @@
             this.panelFooter.Location = new System.Drawing.Point(0, 653);
             this.panelFooter.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
             this.panelFooter.Name = "panelFooter";
-            this.panelFooter.Size = new System.Drawing.Size(834, 80);
+            this.panelFooter.Size = new System.Drawing.Size(934, 80);
             this.panelFooter.TabIndex = 5;
             // 
             // lbChatGpt
@@ -125,6 +130,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // btnSearchCar
             // 
@@ -139,6 +145,7 @@
             this.btnSearchCar.TabIndex = 3;
             this.btnSearchCar.Text = "Search Car";
             this.btnSearchCar.UseVisualStyleBackColor = false;
+            this.btnSearchCar.Click += new System.EventHandler(this.btnSearchCar_Click);
             // 
             // btn_AllCar
             // 
@@ -153,6 +160,7 @@
             this.btn_AllCar.TabIndex = 1;
             this.btn_AllCar.Text = "All Car";
             this.btn_AllCar.UseVisualStyleBackColor = false;
+            this.btn_AllCar.Click += new System.EventHandler(this.btn_AllCar_Click);
             // 
             // btnAddCars
             // 
@@ -167,12 +175,52 @@
             this.btnAddCars.TabIndex = 0;
             this.btnAddCars.Text = "Add Car";
             this.btnAddCars.UseVisualStyleBackColor = false;
+            this.btnAddCars.Click += new System.EventHandler(this.btnAddCars_Click);
+            // 
+            // dataGV_users
+            // 
+            this.dataGV_users.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGV_users.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dataGV_users.Location = new System.Drawing.Point(190, 171);
+            this.dataGV_users.Name = "dataGV_users";
+            this.dataGV_users.RowTemplate.Height = 25;
+            this.dataGV_users.Size = new System.Drawing.Size(744, 482);
+            this.dataGV_users.TabIndex = 7;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(53)))), ((int)(((byte)(101)))));
+            this.label1.Location = new System.Drawing.Point(226, 110);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(379, 27);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Don\'t forget choose a row for updating";
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(53)))), ((int)(((byte)(101)))));
+            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdate.Font = new System.Drawing.Font("Comic Sans MS", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.btnUpdate.ForeColor = System.Drawing.Color.White;
+            this.btnUpdate.Location = new System.Drawing.Point(686, 110);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(102, 34);
+            this.btnUpdate.TabIndex = 5;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // FormUsers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(834, 733);
+            this.ClientSize = new System.Drawing.Size(934, 733);
+            this.Controls.Add(this.btnUpdate);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.dataGV_users);
             this.Controls.Add(this.panelSideMenu);
             this.Controls.Add(this.panelFooter);
             this.Controls.Add(this.panelHeader);
@@ -188,7 +236,9 @@
             this.panelFooter.PerformLayout();
             this.panelSideMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGV_users)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -204,5 +254,8 @@
         private Button btnSearchCar;
         private Button btn_AllCar;
         private Button btnAddCars;
+        private DataGridView dataGV_users;
+        private Label label1;
+        private Button btnUpdate;
     }
 }
