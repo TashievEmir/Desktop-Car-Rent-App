@@ -153,6 +153,7 @@
             this.btnUsers.TabIndex = 3;
             this.btnUsers.Text = "Users";
             this.btnUsers.UseVisualStyleBackColor = false;
+            this.btnUsers.Click += new System.EventHandler(this.btnUsers_Click);
             // 
             // btn_searchCar
             // 
@@ -167,6 +168,7 @@
             this.btn_searchCar.TabIndex = 1;
             this.btn_searchCar.Text = "Search Car";
             this.btn_searchCar.UseVisualStyleBackColor = false;
+            this.btn_searchCar.Click += new System.EventHandler(this.btn_searchCar_Click);
             // 
             // btnAllCars
             // 

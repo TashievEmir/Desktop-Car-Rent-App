@@ -40,10 +40,13 @@
             this.btnAddCar = new System.Windows.Forms.Button();
             this.btn_searchCar = new System.Windows.Forms.Button();
             this.btnAllCars = new System.Windows.Forms.Button();
+            this.lbMainpage = new System.Windows.Forms.Label();
+            this.pbSucces = new System.Windows.Forms.PictureBox();
             this.panelHeader.SuspendLayout();
             this.panelFooter.SuspendLayout();
             this.panelSideMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSucces)).BeginInit();
             this.SuspendLayout();
             // 
             // panelHeader
@@ -139,6 +142,7 @@
             this.btnUsers.TabIndex = 3;
             this.btnUsers.Text = "Users";
             this.btnUsers.UseVisualStyleBackColor = false;
+            this.btnUsers.Click += new System.EventHandler(this.btnUsers_Click);
             // 
             // btnAddCar
             // 
@@ -166,6 +170,7 @@
             this.btn_searchCar.TabIndex = 1;
             this.btn_searchCar.Text = "Search Car";
             this.btn_searchCar.UseVisualStyleBackColor = false;
+            this.btn_searchCar.Click += new System.EventHandler(this.btn_searchCar_Click);
             // 
             // btnAllCars
             // 
@@ -181,12 +186,35 @@
             this.btnAllCars.UseVisualStyleBackColor = false;
             this.btnAllCars.Click += new System.EventHandler(this.btnAllCars_Click);
             // 
+            // lbMainpage
+            // 
+            this.lbMainpage.AutoSize = true;
+            this.lbMainpage.Font = new System.Drawing.Font("Comic Sans MS", 22F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.lbMainpage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(53)))), ((int)(((byte)(101)))));
+            this.lbMainpage.Location = new System.Drawing.Point(261, 150);
+            this.lbMainpage.Name = "lbMainpage";
+            this.lbMainpage.Size = new System.Drawing.Size(459, 42);
+            this.lbMainpage.TabIndex = 3;
+            this.lbMainpage.Text = "You have logged in succesfully";
+            // 
+            // pbSucces
+            // 
+            this.pbSucces.Image = ((System.Drawing.Image)(resources.GetObject("pbSucces.Image")));
+            this.pbSucces.Location = new System.Drawing.Point(414, 227);
+            this.pbSucces.Name = "pbSucces";
+            this.pbSucces.Size = new System.Drawing.Size(149, 156);
+            this.pbSucces.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbSucces.TabIndex = 4;
+            this.pbSucces.TabStop = false;
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
             this.ClientSize = new System.Drawing.Size(784, 511);
+            this.Controls.Add(this.pbSucces);
+            this.Controls.Add(this.lbMainpage);
             this.Controls.Add(this.panelSideMenu);
             this.Controls.Add(this.panelFooter);
             this.Controls.Add(this.panelHeader);
@@ -202,7 +230,9 @@
             this.panelFooter.PerformLayout();
             this.panelSideMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSucces)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -219,5 +249,7 @@
         private Button btnAllCars;
         private Button btnLogOut;
         private PictureBox pictureBox1;
+        private Label lbMainpage;
+        private PictureBox pbSucces;
     }
 }

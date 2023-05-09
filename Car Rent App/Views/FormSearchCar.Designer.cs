@@ -40,7 +40,7 @@
             this.btn_AllCar = new System.Windows.Forms.Button();
             this.btnAddCars = new System.Windows.Forms.Button();
             this.dataGVSearchCar = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbBrand = new System.Windows.Forms.TextBox();
             this.lb_brand = new System.Windows.Forms.Label();
             this.lb_model = new System.Windows.Forms.Label();
             this.tbmodel = new System.Windows.Forms.TextBox();
@@ -62,7 +62,7 @@
             this.panelHeader.Location = new System.Drawing.Point(0, 0);
             this.panelHeader.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
             this.panelHeader.Name = "panelHeader";
-            this.panelHeader.Size = new System.Drawing.Size(834, 84);
+            this.panelHeader.Size = new System.Drawing.Size(884, 84);
             this.panelHeader.TabIndex = 3;
             // 
             // btnLogOut
@@ -95,7 +95,7 @@
             this.panelFooter.Location = new System.Drawing.Point(0, 519);
             this.panelFooter.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
             this.panelFooter.Name = "panelFooter";
-            this.panelFooter.Size = new System.Drawing.Size(834, 92);
+            this.panelFooter.Size = new System.Drawing.Size(884, 92);
             this.panelFooter.TabIndex = 4;
             // 
             // lbChatGpt
@@ -182,19 +182,19 @@
             // dataGVSearchCar
             // 
             this.dataGVSearchCar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGVSearchCar.Location = new System.Drawing.Point(196, 242);
+            this.dataGVSearchCar.Location = new System.Drawing.Point(196, 206);
             this.dataGVSearchCar.Name = "dataGVSearchCar";
             this.dataGVSearchCar.RowTemplate.Height = 25;
-            this.dataGVSearchCar.Size = new System.Drawing.Size(626, 277);
+            this.dataGVSearchCar.Size = new System.Drawing.Size(676, 304);
             this.dataGVSearchCar.TabIndex = 6;
             // 
-            // textBox1
+            // tbBrand
             // 
-            this.textBox1.Font = new System.Drawing.Font("Comic Sans MS", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(281, 105);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(157, 30);
-            this.textBox1.TabIndex = 7;
+            this.tbBrand.Font = new System.Drawing.Font("Comic Sans MS", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.tbBrand.Location = new System.Drawing.Point(281, 105);
+            this.tbBrand.Name = "tbBrand";
+            this.tbBrand.Size = new System.Drawing.Size(157, 30);
+            this.tbBrand.TabIndex = 7;
             // 
             // lb_brand
             // 
@@ -232,12 +232,13 @@
             this.btnserach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnserach.Font = new System.Drawing.Font("Comic Sans MS", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.btnserach.ForeColor = System.Drawing.Color.White;
-            this.btnserach.Location = new System.Drawing.Point(299, 168);
+            this.btnserach.Location = new System.Drawing.Point(314, 156);
             this.btnserach.Name = "btnserach";
             this.btnserach.Size = new System.Drawing.Size(83, 34);
             this.btnserach.TabIndex = 11;
             this.btnserach.Text = "Search";
             this.btnserach.UseVisualStyleBackColor = false;
+            this.btnserach.Click += new System.EventHandler(this.btnserach_Click);
             // 
             // btnBook
             // 
@@ -245,24 +246,25 @@
             this.btnBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBook.Font = new System.Drawing.Font("Comic Sans MS", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.btnBook.ForeColor = System.Drawing.Color.White;
-            this.btnBook.Location = new System.Drawing.Point(463, 168);
+            this.btnBook.Location = new System.Drawing.Point(587, 156);
             this.btnBook.Name = "btnBook";
             this.btnBook.Size = new System.Drawing.Size(83, 34);
             this.btnBook.TabIndex = 12;
             this.btnBook.Text = "Book";
             this.btnBook.UseVisualStyleBackColor = false;
+            this.btnBook.Click += new System.EventHandler(this.btnBook_Click);
             // 
             // FormSearchCar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(834, 611);
+            this.ClientSize = new System.Drawing.Size(884, 611);
             this.Controls.Add(this.btnBook);
             this.Controls.Add(this.btnserach);
             this.Controls.Add(this.tbmodel);
             this.Controls.Add(this.lb_model);
             this.Controls.Add(this.lb_brand);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbBrand);
             this.Controls.Add(this.dataGVSearchCar);
             this.Controls.Add(this.panelSideMenu);
             this.Controls.Add(this.panelFooter);
@@ -296,7 +298,7 @@
         private Button btn_AllCar;
         private Button btnAddCars;
         private DataGridView dataGVSearchCar;
-        private TextBox textBox1;
+        private TextBox tbBrand;
         private Label lb_brand;
         private Label lb_model;
         private TextBox tbmodel;

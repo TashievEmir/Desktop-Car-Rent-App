@@ -37,5 +37,19 @@ namespace Car_Rent_App.Views
             formAllCars.Show();
             this.Hide();
         }
+
+        private void btn_searchCar_Click(object sender, EventArgs e)
+        {
+            FormSearchCar formSearchCar = new FormSearchCar();
+            formSearchCar.Show();
+            this.Hide();
+        }
+
+        private void btnUsers_Click(object sender, EventArgs e)
+        {
+            FormUsers formUsers = new FormUsers();
+            formUsers.Show();
+            this.Hide();
+        }
     }
 }
